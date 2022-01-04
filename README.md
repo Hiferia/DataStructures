@@ -3,6 +3,7 @@ Some test with Data Structures, at the moment just Linked List and Doubly Linked
 For the Linked List there are these functions:
 - "remove"
 - "reverse"
+
 For the Doubly Linked List:
 - "remove"
 - "reverse"
