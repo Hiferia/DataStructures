@@ -228,7 +228,7 @@ void shuffle_List(LIST_NODE_PTRPTR head)
         int random_01 = rand() % listLenght;                                            //creating random_01
         int random_02 = rand() % listLenght;                                            //creating random_02
                                                                                         //NOTE: we should add 1 at these random, atm they avoid the last element of the list
-        while(random_01 == random_02)                                                   //changing random_02 till it's different from random_02
+        while(random_01 == random_02)                                                   //changing random_02 till it's different from random_01
         {
             random_02 = rand() % listLenght;
         }
