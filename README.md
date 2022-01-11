@@ -1,5 +1,5 @@
 # DataStructures
-Some test with Data Structures, at the moment just Linked List and Doubly Linked List.
+Some test with Data Structures, Linked List, Doubly Linked List, Sets and Dictionaries
 
 For the Linked List there are these functions:
 - "remove"
@@ -11,3 +11,14 @@ For the Doubly Linked List:
 - "insert_after"
 - "insert_before"
 - "shuffle"
+
+For the Sets:
+- "remove"
+- "search"
+- "getIndex"
+
+For the Dictionaries:
+- "remove"
+- "search"
+- "getIndex"
+- "print" any type of the values
