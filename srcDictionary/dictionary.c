@@ -106,7 +106,7 @@ dictionary_node_t *search_item(dictionary_table_t *table, const char *key)
     }
     return NULL;
 }
-dictionary_node_t *search_item01(dictionary_table_t *table, const char *key)
+dictionary_node_t *search_item01(dictionary_table_t *table, const char *key)    //another function to search, without cycling
 {
     size_t index = get_Index(table->hashmap_size, key);             //calling the function get_Index to get the index of the item we are looking for
     dictionary_node_t *current_node = table->nodes[index];          //creating a node like the one we are looking for
@@ -119,7 +119,7 @@ dictionary_node_t *search_item01(dictionary_table_t *table, const char *key)
     }
     return NULL;
 }
-void remove_item01(dictionary_table_t *table, const char *key)
+void remove_item01(dictionary_table_t *table, const char *key)          //another function to remove, without cycling
 {
     size_t index = get_Index(table->hashmap_size, key);
     dictionary_node_t *current_node = table->nodes[index];
