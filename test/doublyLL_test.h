@@ -235,7 +235,7 @@ CLOVE_TEST(shuffle_list_swapping_nearby_nodes)
     ls_list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item2);
     ls_list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item3);
 
-    ls_shuffle_list_not_random((LIST_NODE_PTRPTR)&my_doubly_linked_list, 1);
+    ls_shuffle_list_not_random_nearby_nodes((LIST_NODE_PTRPTR)&my_doubly_linked_list, 1);
 
     list_node_t *item_to_check_00 = ls_get_node_from_list((LIST_NODE_PTRPTR)&my_doubly_linked_list, 0);
     list_node_t *item_to_check_01 = ls_get_node_from_list((LIST_NODE_PTRPTR)&my_doubly_linked_list, 1);
@@ -243,7 +243,7 @@ CLOVE_TEST(shuffle_list_swapping_nearby_nodes)
     CLOVE_IS_TRUE((string_item_t *)item_to_check_00 == item1);
     CLOVE_IS_TRUE((string_item_t *)item_to_check_01 == item0);
 
-    ls_shuffle_list_not_random((LIST_NODE_PTRPTR)&my_doubly_linked_list, 2);
+    ls_shuffle_list_not_random_nearby_nodes((LIST_NODE_PTRPTR)&my_doubly_linked_list, 2);
 
     item_to_check_00 = ls_get_node_from_list((LIST_NODE_PTRPTR)&my_doubly_linked_list, 0);
     item_to_check_01 = ls_get_node_from_list((LIST_NODE_PTRPTR)&my_doubly_linked_list, 1);
@@ -269,7 +269,7 @@ CLOVE_TEST(shuffle_list_swapping_distant_nodes)
     ls_list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item4);
     ls_list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item5);
 
-    ls_shuffle_list_not_random((LIST_NODE_PTRPTR)&my_doubly_linked_list, 1);
+    ls_shuffle_list_not_random_distant_nodes((LIST_NODE_PTRPTR)&my_doubly_linked_list, 1);
 
     list_node_t *item_to_check_00 = ls_get_node_from_list((LIST_NODE_PTRPTR)&my_doubly_linked_list, 0);
     list_node_t *item_to_check_01 = ls_get_node_from_list((LIST_NODE_PTRPTR)&my_doubly_linked_list, 2);
@@ -277,7 +277,7 @@ CLOVE_TEST(shuffle_list_swapping_distant_nodes)
     CLOVE_IS_TRUE((string_item_t *)item_to_check_00 == item2);
     CLOVE_IS_TRUE((string_item_t *)item_to_check_01 == item0);
 
-    ls_shuffle_list_not_random((LIST_NODE_PTRPTR)&my_doubly_linked_list, 2);
+    ls_shuffle_list_not_random_distant_nodes((LIST_NODE_PTRPTR)&my_doubly_linked_list, 2);
 
     item_to_check_00 = ls_get_node_from_list((LIST_NODE_PTRPTR)&my_doubly_linked_list, 0);
     item_to_check_01 = ls_get_node_from_list((LIST_NODE_PTRPTR)&my_doubly_linked_list, 2);
