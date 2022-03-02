@@ -14,22 +14,22 @@ int main()
     string_item_t *item6 = string_item_new("INTRUSO");
     string_item_t *item7 = string_item_new("INTRUSO2");
 
-    list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item1);
-    list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item2);
-    list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item3);
-    list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item4);
-    list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item5);
+    ls_list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item1);
+    ls_list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item2);
+    ls_list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item3);
+    ls_list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item4);
+    ls_list_append((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item5);
 
     
-    insert_after((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item6, (LIST_NODE_PTR)item2);
+    ls_insert_after((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item6, (LIST_NODE_PTR)item2);
 
-    insert_before((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item7, (LIST_NODE_PTR)item2);
+    ls_insert_before((LIST_NODE_PTRPTR)&my_doubly_linked_list, (LIST_NODE_PTR)item7, (LIST_NODE_PTR)item2);
 
-    shuffle_List((LIST_NODE_PTRPTR)&my_doubly_linked_list);
+    ls_shuffle_list((LIST_NODE_PTRPTR)&my_doubly_linked_list);
 
-    reverse((LIST_NODE_PTRPTR)&my_doubly_linked_list);
+    ls_reverse_list((LIST_NODE_PTRPTR)&my_doubly_linked_list);
     
-    remove_node((list_node_t **)&my_doubly_linked_list, (list_node_t *)item5);
+    ls_remove_node((list_node_t **)&my_doubly_linked_list, (list_node_t *)item5);
 
     
     
