@@ -227,8 +227,8 @@ void ls_shuffle_list_not_random_nearby_nodes(LIST_NODE_PTRPTR head, int shuffle_
     int listLenght = ls_get_list_lenght(head);                                          //we get the lenght of the list
     for (int i = 0; i < shuffle_times; i++)                                             //we shuffle random times
     {
-        int random_01 = i;                                                              //creating random_01
-        int random_02 = i + 1;                                                          //creating random_02
+        int random_01 = i;                                                              //creating random_01 as i
+        int random_02 = i + 1;                                                          //creating random_02 as i + 1 to have nearby nodes
 
         list_node_t *node_01 = ls_get_node_from_list(head, random_01);                  //getting the first node at random_01 index
         list_node_t *node_02 = ls_get_node_from_list(head, random_02);                  //getting the second node at random_02 index
@@ -241,8 +241,8 @@ void ls_shuffle_list_not_random_distant_nodes(LIST_NODE_PTRPTR head, int shuffle
     int listLenght = ls_get_list_lenght(head);                                          //we get the lenght of the list
     for (int i = 0; i < shuffle_times; i++)                                             //we shuffle random times
     {
-        int random_01 = i;                                                              //creating random_01
-        int random_02 = i + 2;                                                          //creating random_02
+        int random_01 = i;                                                              //creating random_01 as i
+        int random_02 = i + 2;                                                          //creating random_02 as i + 2 to have distant nodes
 
         list_node_t *node_01 = ls_get_node_from_list(head, random_01);                  //getting the first node at random_01 index
         list_node_t *node_02 = ls_get_node_from_list(head, random_02);                  //getting the second node at random_02 index
