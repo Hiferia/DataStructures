@@ -1,5 +1,5 @@
 MD bin
 
-clang.exe -IsrcDoublyLL -o bin\doublyll.lib srcDoublyLL\*.c -fuse-ld=llvm-lib
+clang.exe -IDoublyLinkedList\include -o bin\doublyll.lib DoublyLinkedList\src\*.c -fuse-ld=llvm-lib
 
-clang.exe -Itest -IsrcDoublyLL -o bin\doublyLL_test.exe test\*.c -Lbin -l doublyll
+clang.exe -Itest\include -IDoublyLinkedList\include -o bin\doublyLL_test.exe test\src\*.c -Lbin -l doublyll
